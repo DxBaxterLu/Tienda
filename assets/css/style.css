@@ -21,11 +21,11 @@ a:hover {
   color: #555555;
 }
 
-.alert_green {
+strong .alert_green {
   color: green;
 }
 
-.alert_red {
+strong .alert_red {
   color: red;
 }
 
