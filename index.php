@@ -1,6 +1,9 @@
 <?php
 //Cargamos el autoload, teniendo acceso a todos los controladores, a todas las clases
 require_once 'autoload.php';
+//requerimos maqueta html
+require_once 'views/layout/header.php';
+require_once 'views/layout/sidebar.php';
 
 //verificamos si llega el controlador por la url
 if (isset($_GET['controllers'])) {
@@ -24,3 +27,5 @@ if (class_exists($autocargar)) {
 } else {
     echo "La pagina que buscas no existe";
 }
+
+require_once 'views/layout/footer.php';
