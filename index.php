@@ -1,113 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/css/style.css">
-    
+    <link rel="stylesheet" href="assets/css/style.css">
+
     <title>Tienda Camisetas</title>
 </head>
+
 <body>
-    <!-- cabecera -->
-    <div class="d-flex">
-        <div class="container-fluid">
-            <div class="row flex-nowrap">
-                <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
-                    <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
-                        <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                            <span class="fs-5 d-none d-sm-inline">Menu</span>
-                        </a>
-                        <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link align-middle px-0">
-                                    <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Home</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                                    <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Dashboard</span> </a>
-                                <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
-                                    <li class="w-100">
-                                        <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 1 </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 2 </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#" class="nav-link px-0 align-middle">
-                                    <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Orders</span></a>
-                            </li>
-                            <li>
-                                <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
-                                    <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline">Bootstrap</span></a>
-                                <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
-                                    <li class="w-100">
-                                        <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 1</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 2</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                                    <i class="fs-4 bi-grid"></i> <span class="ms-1 d-none d-sm-inline">Products</span> </a>
-                                    <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
-                                    <li class="w-100">
-                                        <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 1</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 2</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 3</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 4</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#" class="nav-link px-0 align-middle">
-                                    <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Customers</span> </a>
-                            </li>
-                        </ul>
-                        <hr>
-                        <div class="dropdown pb-4">
-                            <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="https://github.com/mdo.png" alt="hugenerd" width="30" height="30" class="rounded-circle">
-                                <span class="d-none d-sm-inline mx-1">loser</span>
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
-                                <li><a class="dropdown-item" href="#">New project...</a></li>
-                                <li><a class="dropdown-item" href="#">Settings</a></li>
-                                <li><a class="dropdown-item" href="#">Profile</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Sign out</a></li>
-                            </ul>
-                        </div>
-                    </div>
+    <div id="container">
+        <!-- cabecera -->
+        <header id="header">
+            <div id="logo">
+                <img src="assets/img/camiseta.png" alt="Logo">
+                <a href="index.php">Tienda de Camisetas</a>
+            </div>
+        </header>
+        <!-- menu -->
+        <nav id="menu">
+            <ul>
+                <li>
+                    <a href="#">Inicio</a>
+                </li>
+                <li>
+                    <a href="#">Categoria 1</a>
+                </li>
+                <li>
+                    <a href="#">Categoria 2</a>
+                </li>
+                <li>
+                    <a href="#">Categoria 3</a>
+                </li>
+                <li>
+                    <a href="#">Categoria 4</a>
+                </li>
+                <li>
+                    <a href="#">Categoria 5</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- barra lateral -->
+        <div id="content">
+            <aside id="lateral">
+                <div id="login" class="block_aside">
+                    <h3>Ingresa a la Web</h3>
+                    <form action="#" method="post">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" placeholder="Email">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" placeholder="Password">
+                        <input type="submit" value="Login">
+                    </form>
+                    <ul>
+                        <li><a href="#">Mis Pedidos</a></li>
+                        <li><a href="#">Gestionar Pedidos</a></li>
+                        <li><a href="#">Gestionar Categorias</a></li>
+                    </ul>
                 </div>
-                <div class="col py-3">
-                    Content area...
+            </aside>
+
+            <!-- contenido centrarl -->
+            <div id="central">
+                <h1>Productos Destacados</h1>
+                <div class="product">
+                    <img src="assets/img/camiseta.png">
+                    <h2>Camiseta Azul Ancha</h2>
+                    <p>$30 Dolares</p>
+                    <a href="#" class="button">Comprar</a>
+                </div>
+                <div class="product">
+                    <img src="assets/img/camiseta.png">
+                    <h2>Camiseta Azul Ancha</h2>
+                    <p>$30 Dolares</p>
+                    <a href="#" class="button">Comprar</a>
+                </div>
+                <div class="product">
+                    <img src="assets/img/camiseta.png">
+                    <h2>Camiseta Azul Ancha</h2>
+                    <p>$30 Dolares</p>
+                    <a href="#" class="button">Comprar</a>
                 </div>
             </div>
         </div>
 
-        
+        <!-- pie de pagina -->
+        <footer id="footer">
+            <p>Desarrollado por David Martinez &copy; <?= date('Y') ?></p>
+        </footer>
     </div>
-    <!-- menu -->
-    <!-- barra lateral -->
-    <!-- contenido centrarl -->
-    <!-- pie de pagina -->
+
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
 </body>
+
 </html>
