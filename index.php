@@ -1,7 +1,7 @@
-<?php
+<?php session_start();
 //Cargamos el autoload, teniendo acceso a todos los controladores, a todas las clases
 require_once 'autoload.php';
-
+require_once 'config/db.php';
 require_once 'config/parameters.php';
 //requerimos maqueta html
 require_once 'views/layout/header.php';
