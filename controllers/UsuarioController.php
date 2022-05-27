@@ -57,13 +57,27 @@ class UsuarioController
             if ($identity && is_object($identity)) {
                 //Manejamos la session
                 $_SESSION['identity'] = $identity;
-                if ($identity->role == 'admin') {
-                    $_SESSION['admin'] == true;
+
+                if ($identity->rol == 'admin') {
+                    $_SESSION['admin'] = true;
                 }
             } else {
                 $_SESSION['error_login'] = 'Identificacion Fallida';
             }
         }
+        header('Location:' . base_url);
+    }
+
+    public function logout()
+    {
+        if (isset($_SESSION['identity'])) {
+            unset($_SESSION['identity']);
+        }
+
+        if (isset($_SESSION['admin'])) {
+            unset($_SESSION['admin']);
+        }
+
         header('Location:' . base_url);
     }
 }
