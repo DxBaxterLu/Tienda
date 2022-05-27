@@ -1,9 +1,9 @@
 <h1>Registrarse</h1>
 
 <?php if (isset($_SESSION['register']) && $_SESSION['register'] == 'Complete') : ?>
-    <strong class="alert_green">Registro Completado Correctamente</strong>
+    <strong class="alert_green">Registro completado correctamente</strong>
 <?php elseif (isset($_SESSION['register']) && $_SESSION['register'] == 'Failed') : ?>
-    <strong class="alert_red">Registro Fallido, Introduces Bien los Datos</strong>
+    <strong class="alert_red">Registro fallido, introduce bien los datos</strong>
 <?php endif; ?>
 <?php Utils::deleteSessions('register'); ?>
 
