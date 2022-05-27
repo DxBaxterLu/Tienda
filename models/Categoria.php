@@ -33,7 +33,7 @@ class Categoria
     //Otros Metodos
     public function getAll()
     {
-        $categorias = $this->db->query('SELECT * FROM categorias ORDER BY nombre asc');
+        $categorias = $this->db->query('SELECT * FROM categorias ORDER BY id desc');
         return $categorias;
     }
 
