@@ -12,6 +12,19 @@ class ProductoController
         require_once 'views/producto/destacados.php';
     }
 
+    public function ver(){
+		if(isset($_GET['id'])){
+			$id = $_GET['id'];
+		
+			$producto = new Producto();
+			$producto->setId($id);
+			
+			$product = $producto->getOne();
+			
+		}
+		require_once 'views/producto/ver.php';
+	}
+
     public function gestion()
     {
         Utils::isAdmin();
@@ -22,10 +35,10 @@ class ProductoController
         require_once 'views/producto/gestion.php';
     }
 
-    public function crear()
-    {
-        require_once 'views/producto/crear.php';
-    }
+    public function crear(){
+		Utils::isAdmin();
+		require_once 'views/producto/crear.php';
+	}
 
     public function save()
     {
